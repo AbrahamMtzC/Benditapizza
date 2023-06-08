@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inicio</title>
+    <meta description="Página inicial del sitio de Bendita Pizza">
+    <meta keywords="Pizzas estilo Chicago, Restaurante de pizzas en Durango, Pasta fresca y casera, Hamburguesas gourmet, Comida para llevar, Bebidas refrescantes, Cena en familia, Servicio a domicilio, Ingredientes frescos y de alta calidad, Menú variado, Ambiente acogedor y relajante">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0e1cd44541.js" crossorigin="anonymous"></script>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div id="preloader"> <img src="img/benditaloading.gif" alt=""></div>
+    <div class="icoderecha">
+        <ul>
+            <li> <a href="https://www.facebook.com/BenditaPizzaDgo" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li> <a href="https://www.instagram.com/benditapizzadgo/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li> <a href="reservar.html"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+    </div>
+    <header>
+		<nav class="barra">
+            <div class="logo">
+                <a href="index.html"><img src="img/logotipo.png" alt="Logo oficial de Bendita Pizza"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.php">Menú</a></li>
+                <li><a href="noticias.php">Noticias</a></li>
+                <li><a href="fotos.php">Fotos</a></li>
+                <li><a href="reservar.html" class="bt-reservar">Reservar</a></li>
+            </ul>
+            <div class="hamburguesa">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+		</nav>
+	</header>
+    <main>
+        <div class="separador"></div>
+        <!-- Slide show -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+        
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="overlay">
+                        <div class="carousel-text">
+                            <h2>Descubre el sabor auténtico de Chicago en cada bocado.</h2>
+                            <a href="reservar.html" class="btn">Reserva Ahora</a>
+                        </div>
+                    </div>
+                    <img src="img/slideshow/SlideShow1.webp" alt="Pizza estilo Chicago" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <div class="no-overlay">
+                        <div class="carousel-text">
+                            <h2>Explora todas las opciones de sabor que tenemos para ti.</h2>
+                            <a href="menu.php" class="btn">Ver Menú</a>
+                        </div>    
+                    </div>
+                    <img src="img/slideshow/SlideShow2.webp" alt="Opciones diversas de sabor" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay">
+                        <div class="carousel-textgr">
+                            <h2><span class="firstyellow">Pizza</span> a tu puerta.</h2>
+                            <a href="entrega.html" class="btn">Pedir Ahora</a>
+                        </div>
+                    </div>
+                    <img src="img/slideshow/SlideShow3.webp" alt="Pizza a tu puerta con Uber Eats o Didi Food" class="d-block w-100">
+                </div>
+            </div>
+        
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span> <i class="fa-solid fa-angles-left"></i> </span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span> <i class="fa-solid fa-angles-right"></i> </span>
+            </button>
+        </div>
+        <!-- fin slide show -->
+        <div class="separador"></div>
+        <!-- platillos populares/noticias -->
+        <nav class="noti">
+            <div class="noti-info">
+                <h1 class="noti-titulo">CHICAGO STYLE</h1>
+                <p class="noti-desc">Pizza rellena en forma de pay, en donde los ingredientes y el queso derretido van por dentro y la salsa de tomate va por fuera, espolvoreada con delicioso queso parmesano.</p>
+                <a href="reservar.html" class="buto">Ver Sucursales</a>
+            </div>
+            <div class="noti-img">
+                <img loading="lazy" src="img/newsproducts/1.webp" alt="Imagen de pizza estilo chicago.">
+            </div>
+        </nav>
+        <nav class="noti">
+            <div class="noti-info">
+                <h1 class="noti-titulo">BENDITA</h1>
+                <p class="noti-desc">Deliciosa pizza tradicional que combina pepperoni, jamón, tocino y champiñones frescos, todo horneado a la perfección en nuestra masa artesanal. </p>
+                <a href="reservar.html" class="buto">Ver Sucursales</a>
+            </div>
+            <div class="noti-img">
+                <img loading="lazy" src="img/newsproducts/2.webp" alt="Imagen de pizza estilo tradicional.">
+            </div>
+        </nav>
+        <nav class="noti">
+            <div class="noti-info">
+                <h1 class="noti-titulo">ENSALADA DIOSA</h1>
+                <p class="noti-desc">Mezcla de lechugas, espinaca, jamón serrano, queso de cabra, arándanos, ajonjolí y vinagreta de vino blanco.</p>
+                <a href="reservar.html" class="buto">Ver Sucursales</a>
+            </div>
+            <div class="noti-img">
+                <img loading="lazy" src="img/newsproducts/3.webp" alt="Imagen de ensalada diosa.">
+            </div>
+        </nav>
+        <!-- Fin platillos importantes/noticias -->
+        <div class="separador"></div>
+    </main>
+    <footer>
+        <div class="columnas-footer">
+            <div class="columna-footer">
+                <h2>Come con nosotros</h2>
+                <ul>
+                    <li><a href="menu.php">Menú</a></li>
+                    <li><a href="reservar.html">Reservar una mesa</a></li>
+                    <li><a href="reservar.html">Encuentra una sucursal</a></li>
+                    <li><a href="entrega.html">Entrega a domicilio</a></li>
+                </ul>
+            </div>
+            <div class="columna-footer">
+                <h2>Explora</h2>
+                <ul>
+                    <li><a href="noticias.php">Blog de noticias</a></li>
+                    <li><a href="acerca.html">Acerca de nosotros</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <!-- <li><a href="admin/index.php">Iniciar Sesión</a></li> -->
+                </ul>
+            </div>
+            <div class="columna-footer">
+                <h2>Mantente conectado</h2>
+                <ul>
+                    <li><a href="reservar.html">Contáctanos</a></li>
+                    <li><a href="https://www.facebook.com/BenditaPizzaDgo" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/benditapizzadgo/?hl=es" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="footlogo">
+            <img src="img/altlogo.png" alt="Logo oficial de Bendita Pizza">
+        </div>
+        <div class="texto-footer">
+            <p>@ 2023 BENDITA PIZZA</p>
+        </div>
+        <div class="footicons">
+            <a href="https://www.facebook.com/BenditaPizzaDgo" target="_blank"><i class="fa-brands fa-facebook footicon"></i></a>
+            <a href="https://www.instagram.com/benditapizzadgo/?hl=es" target="_blank"><i class="fa-brands fa-instagram footicon"></i></a>
+            <a href="reservar.html"><i class="fa-brands fa-whatsapp footicon"></i></a>
+        </div>
+    </footer>
+    <div class="benditaburger">
+        <a href="https://benditaburgermx.com" target="_blank">
+            <img src="img/benditaburger.png">
+        </a>
+    </div>  
+    <!-- boton para regresar -->
+    <button onclick="topFunction()" id="btnRegresar" title="Regresar arriba"> <i class="fa-regular fa-circle-up"></i> </button>
+
+    <!-- Javascript -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

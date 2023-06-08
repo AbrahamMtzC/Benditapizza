@@ -1,0 +1,396 @@
+/* Fuentes de Bendita Pizza */
+@font-face {
+    src: url("../fonts/poppins.ttf");
+    font-family: "Poppins";
+}
+
+/* Fin Fuentes de Bendita Pizza */
+.cont {
+    margin-left: 100px;
+}
+
+body {
+    /* background-image: linear-gradient(90deg, #FFC221, #2D2727); */
+    background-color: #353841;
+}
+/* barra de navegacion admin */
+.sidebar {
+    position: fixed;
+    width: 80px;
+    background-color: #25262B;
+    transition: all 0.3s;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    position: relative;
+}
+
+.sidebar a {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.sidebar a:hover {
+    background-color: #FFC221;
+    justify-content: space-between;
+    color: black;
+}
+
+.sidebar i {
+    font-size: 24px;
+    padding: 20px;
+}
+
+.sidebar span {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.sidebar li:hover span {
+    display: block;
+    left: 80px;
+}
+
+/* fin barra de navegación admin */
+/* tablas/forms */
+.contTabla {
+    border-collapse: collapse;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.15);
+}
+
+.contTabla thead {
+    background-color: #FFC221;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.contTabla th,
+.contTabla td {
+    font-size: 15px;
+    padding: 12px 15px;
+}
+
+.contTabla tbody tr {
+    border-bottom: 1px solid white;
+}
+
+.contTabla tbody tr:nth-of-type(odd){
+    background-color: rgb(255, 250, 243);
+}
+
+.contTabla tbody tr:nth-of-type(even){
+    background-color: bisque;
+}
+
+.contTabla tbody tr:last-of-type {
+    border-bottom: 2px solid #FFC221;
+}
+
+.catego {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.catego h2 {
+    font-family: "Poppins", sans-serif;
+    padding-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.formAgregar {
+    background-color: #262626;
+    color: white;
+    border: 1px solid #ccc;
+    margin: 25px 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, width 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.notiForm {
+    height: 540px;
+}
+
+.produForm {
+    height: 640px;
+}
+
+.hoverEffect:hover,
+.hoverEffect:focus {
+    transform: translateX(-10px);
+    transform-origin: left;
+    width: calc(80% + 50px);
+}
+
+textarea {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+textarea.form-control:focus {
+    background-color: #fff;
+    border: 2px solid #FFC221;
+    outline: none;
+}
+
+.fmodif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+}
+
+.formModificar {
+    transform: scale(1.1);
+    background-color: #262626;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.15);
+}
+
+.formModificar td {
+    font-size: 18px;
+    color: white;
+}
+
+.fmodif h2 {
+    font-family: "Poppins", sans-serif;
+    padding: 20px 10px 10px 10px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.formAgregar td {
+    font-size: 18px;
+    color: white;
+}
+
+.formAgregar th, td {
+    padding: 5px;
+}
+
+.fa-regular, .fa-sharp {
+    color: #FFC221;
+    font-size: xx-large;
+}
+
+.fa-regular:hover, 
+.fa-sharp:hover {
+    color: #F57C00;
+    transform: scale(1.2);
+}
+
+.contTabla img {
+    width: 150px;
+    height: auto;
+}
+
+input[type='email'], input[type='password'], input[type='text'], input[type='number'] {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+input[type='email']:focus, input[type='password']:focus, input[type='text']:focus, 
+input[type='date']:focus, input[type='number']:hover {
+    background-color: #fff;
+    border: 2px solid #FFC221;
+    outline: none;
+}
+
+/* fin tablas/forms */
+/* log in */
+.formIniciar{
+    display: flex;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.register{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 50px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 250px black;
+    text-align: center;
+}
+
+.register h1{
+    font-size: 32px;
+    margin: 10px 0px;
+}
+
+.form__container {
+    margin-top: 25px;
+    display: grid;
+    gap: 40px;
+}
+
+.form__field{
+    position: relative;
+    color: #FFC221;
+}
+
+.register a {
+    text-decoration: none;
+    color: #FFC221;
+    transition: all 0.3s;
+}
+
+.register a:hover{
+    color: white;
+}
+
+.form__field input[type='text'], .form__field input[type='password']{
+    width: 100%;
+    background: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #FFC221;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0px;
+}
+
+.form__field input[type='text']:focus + .form__label, .form__field input[type='password']:focus + .form__label,
+.form__field input[type='text']:not(:placeholder-shown) + .form__label, .form__field input[type='password']:not(:placeholder-shown) + .form__label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #FFC221;
+}
+
+.form__label{
+    color: rgb(140, 140, 140);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+input[type='submit']{
+    background: #FFC221;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+input[type='submit']:hover {
+    color: white;
+    background-color: transparent;
+    border: .8px solid #FFC221;
+    font-weight: bold;
+}
+
+.formIniciar img{
+    width: 120px;
+    height: auto;
+}
+
+#btnSalir {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #FFC221;
+    cursor: pointer;
+    font-size: 40px;
+    transition: all 0.3s;
+}
+
+#btnSalir:hover{
+    color: white;
+    transform: scale(1.2);
+}
+
+@media(max-width:768px){
+    .register h1{
+        font-size: 27px;
+        margin: 10px 0px;
+    }
+}
+/* fin log in */
+/* Custom scrollbar */
+::-webkit-scrollbar { /* width */
+    width: 8px;
+}
+    
+::-webkit-scrollbar-track { /* Track */
+    background: black;
+}
+    
+::-webkit-scrollbar-thumb { /* Handle */
+    background: #FFC221;
+}
+    
+::-webkit-scrollbar-thumb:hover { /* Handle on hover */
+    background: #555;
+}
+/* fin custom scrollbar */
